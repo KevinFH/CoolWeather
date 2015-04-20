@@ -4,6 +4,8 @@ android {
     compileSdkVersion 21
     buildToolsVersion "22.0.1"
 
+    android{compileOptions.encoding="GBK"}
+
     defaultConfig {
         applicationId "com.zhiw.coolweather.app"
         minSdkVersion 15

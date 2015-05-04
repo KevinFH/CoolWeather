@@ -1,7 +1,6 @@
 package com.zhiw.coolweather.app.activity;
 
 
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -56,6 +55,8 @@ public class WeatherActivity extends ActionBarActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);*/
         setContentView(R.layout.weather_layout);
         weatherInfoLayout = (LinearLayout) findViewById(R.id.weather_info_layout);
         cityNameText = (TextView) findViewById(R.id.city_name);
@@ -195,7 +196,8 @@ public class WeatherActivity extends ActionBarActivity implements View.OnClickLi
         //noinspection SimplifiableIfStatement
         switch (id) {
             case R.id.action_settings:
-                return true;
+                Intent intent1 = new Intent(this,SettingsActivity.class);
+                startActivity(intent1);
             case R.id.action_refresh:
                 publishText.setText("Í¬²½ÖÐ...");
                 SharedPreferences spfs = PreferenceManager.getDefaultSharedPreferences(this);

@@ -3,11 +3,29 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item>-->
     </style>
 
-    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
-        <item name="android:background">#27E</item>
+    <style name="MyActionBar" parent="@android:style/Widget.Holo">
+        <item name="android:background">#27A5F9</item>
+    </style>
+
+    <style name="CustomActionBarTheme"  parent="Theme.AppCompat.Light">
+        <item name="android:colorPrimary">#3BAFDA</item>
+        <item name="android:colorPrimaryDark">#4FC1E9</item>
+        <item name="android:navigationBarColor">#3BAFDA</item>
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+    </style>
+
+        <!--<item name="android:colorAccent">@color/accent</item>-->
+   <!-- </style>
+</resources>-->
+
+
+
+    <style name="MyActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+          <item name="android:background">#3BAFDA</item>
+
     </style>
 
 </resources>

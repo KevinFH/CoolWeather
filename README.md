@@ -1,2 +1,2 @@
 # CoolWeather
-CoolWeather learn from https://github.com/tony-green/coolweather
+CoolWeather learn from [tony-green](https://github.com/tony-green/coolweather)
